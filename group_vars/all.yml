@@ -1,0 +1,7 @@
+---
+# Comment in/out desired install state (full or headless)
+install_type: "full"
+#install_type: "headless"
+
+user: "samvongsay"
+config_repo: "https://github.com/samvongsay/dotfile"

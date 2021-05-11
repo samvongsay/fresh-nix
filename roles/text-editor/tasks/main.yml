@@ -1,0 +1,22 @@
+---
+- name: "Install VIM"
+  yum:
+    name: vim
+    state: latest
+  become: yes
+
+- name: "Cloning config files from github"
+  git: 
+    repo: "{{ config_repo }}" 
+    dest: "/tmp/{{ config_repo }}"
+    clone: yes
+
+- name: "Move .vimrc"
+  copy:
+    src: "/tmp/{{ config_repo }}/.vimrc"
+    dest: "/home/{{ user }}/"
+
+- name: "Delete config repo"
+  file: 
+    path: "/tmp/{{ config_repo }}" 
+    state: absent

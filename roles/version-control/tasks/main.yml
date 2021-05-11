@@ -1,0 +1,6 @@
+---
+- name: "Install version control software"
+  yum: 
+    name: git
+    state: latest
+  become: yes

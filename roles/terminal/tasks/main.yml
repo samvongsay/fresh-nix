@@ -1,0 +1,15 @@
+---
+- name: "Create a new .bash_alias file"
+  template:
+    src: bash_aliases.j2
+    dest: ~/.bash_aliases
+    mode: 0755
+
+- name: "Insert alias in bashrc" 
+  blockinfile:
+    path: ~/.bashrc
+    block: |
+      if [ -e $HOME/.bash_aliases ]; then 
+          source $HOME/.bash_aliases
+      fi
+

@@ -1,0 +1,12 @@
+---
+- name: "Setting up terminal"
+  include_role: 
+    name: terminal
+
+- name: "Setting up text editor"
+  include_role: 
+    name: text-editor
+
+- name: "Setting up version control" 
+  include_role: 
+    name: version-control

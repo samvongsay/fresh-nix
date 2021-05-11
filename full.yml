@@ -1,0 +1,8 @@
+---
+- hosts: target 
+  name: "Setting up workstation" 
+  roles: 
+    - version-control
+    - terminal
+    - text-editor
+

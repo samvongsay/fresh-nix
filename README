@@ -1,0 +1,25 @@
+I got lazy with setting up a new Linux workstation everytime I provision a new VM. So instead, Ansible will do this work for me.
+
+========================
+Working Operating System
+========================
+RHEL-based OS
+
+==========
+Directory
+==========
+roles:
+	file_editor - (Default VIM)
+	terminal - BASH related tasks
+	version_control - (Default GIT)
+headless.yml - Skeleton environment #TODO
+full.yml - Fully functional workstation
+
+==========
+Directions: 
+==========
+Install Ansible via your Operating System package manager (ie. yum)
+
+Run commands:
+cd playbooks/
+ansible-playbook -K site.yml
