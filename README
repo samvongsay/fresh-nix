@@ -18,7 +18,7 @@ full.yml - Fully functional workstation
 ==========
 Directions: 
 ==========
-Install Ansible via your Operating System package manager (ie. yum)
+Install Ansible via your Operating System package manager (ie. yum, dnf, apt-get)
 
 Run commands:
 cd playbooks/
