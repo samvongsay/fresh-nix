@@ -19,6 +19,7 @@ full.yml - Fully functional workstation
 Directions: 
 ==========
 Install Ansible via your Operating System package manager (ie. yum, dnf, apt-get)
+Change "user" variable in group_vars/all.yml to match the user the installation will be for
 
 Run commands:
 cd playbooks/
