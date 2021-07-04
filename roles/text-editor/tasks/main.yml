@@ -15,6 +15,7 @@
   copy:
     src: "/tmp/{{ config_repo }}/.vimrc"
     dest: "/home/{{ user }}/"
+  become: yes
 
 - name: "Delete config repo"
   file: 
