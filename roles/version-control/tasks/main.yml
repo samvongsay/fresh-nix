@@ -1,6 +1,14 @@
 ---
-- name: "Install version control software"
+- name: "Install version control software (Debian)"
+  apt: 
+    name: git
+    state: latest
+  become: yes
+  when: ansible_facts['os_family'] == "Debian"
+
+- name: "Install version control software (RHEL)"
   yum: 
     name: git
     state: latest
   become: yes
+  when: ansible_facts['os_family'] == "RedHat"

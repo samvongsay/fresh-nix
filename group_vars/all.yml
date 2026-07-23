@@ -3,5 +3,5 @@
 install_type: "full"
 #install_type: "headless"
 
-user: "samvongsay"
+user: "oem"
 config_repo: "https://github.com/samvongsay/dotfile"
